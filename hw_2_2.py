@@ -1,3 +1,5 @@
+import math
+
 def enter_val(name='value'):
     while True:
         entered_value = input('Enter {} or enter word \'stop\' for exit: '.format(name))
@@ -33,8 +35,9 @@ if entered_value_a and entered_value_b:
         entered_value_a = entered_value_b + entered_value_a
         entered_value_b = entered_value_a - entered_value_b
         entered_value_a = entered_value_a - entered_value_b
-
-    for iteration in range(round(entered_value_a), round(entered_value_b) + 1):
+    # fix on next line
+    # was:    range(int(round(entered_value_a)), int(round(entered_value_b)) + 1)
+    for iteration in range(int(math.ceil(entered_value_a)), int(entered_value_b) + 1):
         result += iteration
         print('iteration={} Result is {}'.format(iteration, result))
     else:
