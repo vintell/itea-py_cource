@@ -61,8 +61,6 @@ def list_empty_i8(dictionary):
         if dictionary[item] is None:
             result[item] = set_empty_i8(item)
 
-    print(result)
-
     return result
 
 
