@@ -19,7 +19,7 @@ def punctuation_strip(input_text):
     return input_text
 
 
-def enter_str(text='Enter fraze or enter Space+Enter for exit: ', is_break_it=True, is_need_confirm=False):
+def enter_str(text='Enter phrase or enter Space+Enter for exit: ', is_break_it=True, is_need_confirm=False):
     """
     Return entered text
     :return: None or str
